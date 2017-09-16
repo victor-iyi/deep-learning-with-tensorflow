@@ -183,5 +183,3 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 .idea/
-.ipynb_checkpoints/
-linear-model/.ipynb_checkpoints/
