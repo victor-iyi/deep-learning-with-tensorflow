@@ -183,3 +183,6 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 .idea/
+
+### Models' logger directory
+logs/
