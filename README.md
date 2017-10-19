@@ -43,10 +43,22 @@ This repository was made in order to help beginners of machine learning and deep
 
 * Transfer learning
 
+..._and also includes various Machine Learning problems such as:_
+
+* CIFAR-10
+
+* MNIST
+
+* kniefy-spoony
+
+* Inception
+
 This notebook is well documented and was designed not to bore the reader, because you might as well go read _**"Learning Long Term Dependencies with Gradient Decent is Difficult"** by Yousha Benjio_, you get the gist... 😄
 
 ## Credits
+
 Magnus Erik Hvass Pedersen, Siraj Raval and Harrison Kingsley.
 
 ## For further information
+
 Please don't hesitate to <a href="mailto:javafolabi@gmail.com">shoot me a mail</a> should any issue arise while running the code, or you have questions, or you just wanna say "hi". I'd really appreciate that :)
