@@ -14,7 +14,7 @@ __pycache__/
 
 
 ### VisualStudioCode template
-.vscode/*
+.vscode
 #!.vscode/settings.json
 #!.vscode/tasks.json
 #!.vscode/launch.json
@@ -34,4 +34,4 @@ datasets/
 
 ### Models' logger directory
 logs/
-
+saved/
