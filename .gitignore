@@ -10,7 +10,7 @@ __pycache__/
 
 
 ### JetBrains template
-.idea/
+.idea
 
 
 ### VisualStudioCode template
@@ -33,5 +33,4 @@ datasets/
 
 
 ### Models' logger directory
-logs/
 saved/
