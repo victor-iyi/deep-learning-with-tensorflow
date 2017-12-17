@@ -54,12 +54,13 @@
 #
 ########################################################################
 
-import numpy as np
-import tensorflow as tf
-import download
-from cache import cache
 import os
 import sys
+
+import download
+import numpy as np
+import tensorflow as tf
+from cache import cache
 
 ########################################################################
 # Various directories and file-names.
@@ -79,6 +80,7 @@ path_uid_to_name = "imagenet_synset_to_human_label_map.txt"
 
 # File containing the TensorFlow graph definition. (Downloaded)
 path_graph_def = "classify_image_graph_def.pb"
+
 
 ########################################################################
 
@@ -115,9 +117,9 @@ class NameLookup:
     def __init__(self):
         # Mappings between uid, cls and name are dicts, where insertions and
         # lookup have O(1) time-usage on average, but may be O(n) in worst case.
-        self._uid_to_cls = {}   # Map from uid to cls.
+        self._uid_to_cls = {}  # Map from uid to cls.
         self._uid_to_name = {}  # Map from uid to name.
-        self._cls_to_uid = {}   # Map from cls to uid.
+        self._cls_to_uid = {}  # Map from cls to uid.
 
         # Read the uid-to-name mappings from file.
         path = os.path.join(data_dir, path_uid_to_name)
@@ -266,7 +268,6 @@ class Inception:
 
         # Set the new graph as the default.
         with self.graph.as_default():
-
             # TensorFlow graphs are saved to disk as so-called Protocol Buffers
             # aka. proto-bufs which is a file-format that works on multiple
             # platforms. In this case it is saved as a binary file.
@@ -532,7 +533,7 @@ def process_images(fn, images=None, image_paths=None):
     # For each input image.
     for i in range(num_images):
         # Status-message. Note the \r which means the line should overwrite itself.
-        msg = "\r- Processing image: {0:>6} / {1}".format(i+1, num_images)
+        msg = "\r- Processing image: {0:>6} / {1}".format(i + 1, num_images)
 
         # Print the status message.
         sys.stdout.write(msg)
